@@ -2,22 +2,45 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-
+    mover=new ofxSPAutomata(1);
+    mover1=new ofxSPAutomata(3);
+    
+    gravity=ofVec2f(0,0.1);
+    
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
-
+    //ofSaveFrame();
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
-
+    
+    mover->update();
+    mover->checkEdges();
+    mover->display();
+    mover->applyGravity(gravity);
+ //   mover->applyForce(ofVec2f(0.0000001,0));
+    
+    mover1->update();
+    mover1->checkEdges();
+    mover1->display();
+    mover1->applyGravity(gravity);
+  //  mover1->applyForce(ofVec2f(0.000001,0));
+   
 }
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
-
+    if(key=='a')
+    {
+        gravity=ofVec2f(0,-0.01);
+    }
+    else if(key=='b')
+    {
+        gravity=ofVec2f(0,0.01);
+    }
 }
 
 //--------------------------------------------------------------

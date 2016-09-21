@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		29D734F0DDECC8C5978185D7 /* testApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00A1BFCBB38848AD0E0C8539 /* testApp.cpp */; };
+		96529E811D8F09F400F64563 /* ofxSPFluid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96529E7F1D8F09F400F64563 /* ofxSPFluid.cpp */; };
+		96529E841D8F0B4A00F64563 /* ofxSPWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96529E821D8F0B4A00F64563 /* ofxSPWorld.cpp */; };
 		9674B30D1D777B5000E5CE01 /* ofxSimplePhysics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9674B30B1D777B5000E5CE01 /* ofxSimplePhysics.cpp */; };
+		96A490051D78142800DD1483 /* ofxSPAutomata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96A490031D78142800DD1483 /* ofxSPAutomata.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 /* End PBXBuildFile section */
@@ -45,8 +48,14 @@
 /* Begin PBXFileReference section */
 		00A1BFCBB38848AD0E0C8539 /* testApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = testApp.cpp; path = src/testApp.cpp; sourceTree = SOURCE_ROOT; };
 		2D129AB0F7D46B8DFCEADEDB /* testApp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = testApp.h; path = src/testApp.h; sourceTree = SOURCE_ROOT; };
+		96529E7F1D8F09F400F64563 /* ofxSPFluid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSPFluid.cpp; sourceTree = "<group>"; };
+		96529E801D8F09F400F64563 /* ofxSPFluid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSPFluid.h; sourceTree = "<group>"; };
+		96529E821D8F0B4A00F64563 /* ofxSPWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSPWorld.cpp; sourceTree = "<group>"; };
+		96529E831D8F0B4A00F64563 /* ofxSPWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSPWorld.h; sourceTree = "<group>"; };
 		9674B30B1D777B5000E5CE01 /* ofxSimplePhysics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimplePhysics.cpp; sourceTree = "<group>"; };
 		9674B30C1D777B5000E5CE01 /* ofxSimplePhysics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimplePhysics.h; sourceTree = "<group>"; };
+		96A490031D78142800DD1483 /* ofxSPAutomata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSPAutomata.cpp; sourceTree = "<group>"; };
+		96A490041D78142800DD1483 /* ofxSPAutomata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSPAutomata.h; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* example-vectorsDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "example-vectorsDebug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
@@ -87,6 +96,12 @@
 			children = (
 				9674B30B1D777B5000E5CE01 /* ofxSimplePhysics.cpp */,
 				9674B30C1D777B5000E5CE01 /* ofxSimplePhysics.h */,
+				96A490031D78142800DD1483 /* ofxSPAutomata.cpp */,
+				96A490041D78142800DD1483 /* ofxSPAutomata.h */,
+				96529E7F1D8F09F400F64563 /* ofxSPFluid.cpp */,
+				96529E801D8F09F400F64563 /* ofxSPFluid.h */,
+				96529E821D8F0B4A00F64563 /* ofxSPWorld.cpp */,
+				96529E831D8F0B4A00F64563 /* ofxSPWorld.h */,
 			);
 			name = src;
 			path = ../src;
@@ -227,7 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A490051D78142800DD1483 /* ofxSPAutomata.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				96529E811D8F09F400F64563 /* ofxSPFluid.cpp in Sources */,
+				96529E841D8F0B4A00F64563 /* ofxSPWorld.cpp in Sources */,
 				29D734F0DDECC8C5978185D7 /* testApp.cpp in Sources */,
 				9674B30D1D777B5000E5CE01 /* ofxSimplePhysics.cpp in Sources */,
 			);

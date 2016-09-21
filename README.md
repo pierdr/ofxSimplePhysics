@@ -1,39 +1,29 @@
 ofxSimplePhysics
 =====================================
 
-*This is a template of a README file for your addon. Fill in the relevant sections, and it should already give users a pretty good overview over your awesome addon!*
-We chose the [Markdown format](http://daringfireball.net/projects/markdown/syntax) since it can present good formatting where available (e.g. on Github) while still staying human-readable with a plain text editor.
-Don't forget, before announcing your addon to the world, you should replace `README.md` with this file and remove `README_AUTHOR.md`.
+A simple physics library for openFrameworks.
 
 Introduction
 ------------
-Describe what your addon is about
+This is just a simple library to make sprites move on the screen.
+In the library there are:
+
+- __automatas__ and the class is ofxSPAutomata;
+- __fluid__ and the class is ofxSPFluid;
+- __world__ and the class is ofxSPWorld; 
 
 License
 -------
-State which license you offer your addon under. openFrameworks is distributed under the [MIT License](https://en.wikipedia.org/wiki/MIT_License), and you might consider using this for your repository. By default, `license.md` contains a copy of the MIT license to which you can add your name and the year.
+Released under [MIT License](https://en.wikipedia.org/wiki/MIT_License), check `license.md` for more info.
 
-Installation
-------------
-Any steps necessary to install your addon. Optimally, this means just dropping the folder into the `openFrameworks/addons/` folder.
-
-Dependencies
-------------
-What other addons are needed to properly work with this one?
 
 Compatibility
 ------------
-Which versions of OF does this addon work with?
+Tested with of 0.9.3 on mac os.
 
 Known issues
 ------------
-Any specific (and long-living) issues/limitations you want to mention? For bugs, etc. you should use the issue tracker of your addon's repository
+Collision detection must be improved! 
 
-Version history
-------------
-It make sense to include a version history here (newest releases first), describing new features and changes to the addon. Use [git tags](http://learn.github.com/p/tagging.html) to mark release points in your repo, too!
-
-### Version 0.1 (Date):
-Describe relevant changes etc.
 
 
