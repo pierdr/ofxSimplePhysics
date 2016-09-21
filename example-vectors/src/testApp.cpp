@@ -21,13 +21,12 @@ void testApp::draw(){
     mover->checkEdges();
     mover->display();
     mover->applyGravity(gravity);
- //   mover->applyForce(ofVec2f(0.0000001,0));
+
     
     mover1->update();
     mover1->checkEdges();
     mover1->display();
     mover1->applyGravity(gravity);
-  //  mover1->applyForce(ofVec2f(0.000001,0));
    
 }
 
